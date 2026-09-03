@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SportsBookingSystem-ERD" id="8D9D547F-034D-CC02-1232-C761573C7271" version="3.5">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-08-29 16:10:08 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8D9D547F-034D-CC02-1232-C761573C7271</designId>
+</OSDM_Design>

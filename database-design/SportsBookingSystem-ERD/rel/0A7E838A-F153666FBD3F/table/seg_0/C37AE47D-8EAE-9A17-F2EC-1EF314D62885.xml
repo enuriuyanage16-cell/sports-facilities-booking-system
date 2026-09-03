@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C37AE47D-8EAE-9A17-F2EC-1EF314D62885" name="Facility">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>DE44F6C9-B0FB-A9C9-9CE3-995298A9A64C</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FacilityID" id="8074A11D-7459-289D-0F88-6BAD70BD0CBD">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>2D56EF88-F676-5380-D9E7-0056DE3DC154</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FacilityName" id="17E41E95-D4C2-7254-9222-A8DC3E254BBE">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>BA4AAA81-249E-F624-B882-BD04DE25005F</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FacilityType" id="C903030C-0335-E62D-8F2B-79D0683926BD">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>40B04A17-6ECE-014E-2C81-BA3CBD19CF6A</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FacilityLocation" id="7F214711-A400-4560-8D2E-A24FC0E738C7">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>4C5DBC49-B4EB-CD15-93B1-AD372A7E4207</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FacilityCapacity" id="4E579B7A-C14C-6BB8-4139-663913CEB417">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>1F688798-C997-6D1F-47FC-3E9FF6F4EC6B</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FacilityAvailabilityStatus" id="3F0B8205-F7EF-97C5-0FF3-13F24E3D3C7F">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>6D6DFDE4-BEC9-6D31-83A4-3A578F2FB365</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StatusReason" id="A20A6D1C-244C-AA86-8671-B639D91E48AA">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>2E5A2844-855D-0C39-6E7E-34FABE6DC36C</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="4E3ABCB7-9358-1BD8-7383-DF5186877619">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>60E3FA90-CD3A-7FA2-D4BE-7753921494FE</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OpeningTime" id="09A14BF9-93CA-7C7F-C8B3-2EC8B9617825">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>E1B97872-F340-3B90-FE5E-70165806CFE3</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ClosingTime" id="9BC5C9CF-EBA8-7F88-6D8B-7396BA02CC6E">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>D14DDB46-B393-56EF-71BA-439CEA3A0D86</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6111E5C7-1915-3017-9ABA-A8095BDBB209" name="Facility_PK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>8C13C9B7-35B0-94B9-E5E0-E424E70CDE66</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8074A11D-7459-289D-0F88-6BAD70BD0CBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

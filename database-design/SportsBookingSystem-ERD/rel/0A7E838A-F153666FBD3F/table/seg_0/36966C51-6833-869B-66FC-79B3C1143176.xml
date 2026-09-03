@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36966C51-6833-869B-66FC-79B3C1143176" name="Booking">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>98D0E86A-4AA9-2DD6-B2A0-FEF370CDD805</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BookingID" id="7C7C12B7-8DBD-9AFB-80DF-700D202E8C17">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>43B660D5-0BB8-DE13-5087-F81943D18ECF</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BookingDate" id="4A1BD2D6-E1D0-EA10-51FE-8E1F07E503F0">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>8766F026-B62A-2445-0EF0-1F346E7F3CCC</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StartTime" id="06D20DAA-369A-FFA1-6C2B-2940D2728FAC">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>59486B84-DBA3-04B1-7B4C-BC0A68495701</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EndTime" id="050B6DF5-CFBE-FCD3-31D4-A0707496D9E4">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>125D591C-3F00-9048-0E03-52C830CD2B7E</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Status" id="D16312E3-1C4E-7301-79BC-99A974B986D3">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>B9A02707-3506-73AB-1E0E-4D1ED7CAA082</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Member_MemberID" id="FE4EF1AC-6098-C3A3-6739-0B585DCE80D0">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>BF5463D5-28A4-0405-5CDE-3AB44345D1FA</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B074A652-8E91-C24F-E2D0-C5FD76DB1037" referredColumn="9D693143-1EFA-A37A-D9BF-850D2D36BE8E"/>
+</associations>
+</Column>
+<Column name="Facility_FacilityID" id="2F40CC0C-17CB-EDA9-48AF-7F42D4B2FEEB">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>CBFC655C-E952-83B4-ACE8-F5C07CA99E97</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="002990E2-1542-B318-2AD4-C36EE8E4686E" referredColumn="8074A11D-7459-289D-0F88-6BAD70BD0CBD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="299C615C-4B59-210D-0012-8FBAFEC29635" name="Booking_PK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>8E6C8C88-C775-3145-2291-93C41EBDC9F8</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C7C12B7-8DBD-9AFB-80DF-700D202E8C17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20037F39-5FB1-580A-FF8B-B516D1533E12" name="Booking_Facility_FK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:43 UTC</createdTime>
+<generatorID>FB93CEBA-235C-9886-1DD8-6150D7C55B6A</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F40CC0C-17CB-EDA9-48AF-7F42D4B2FEEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F71DB72-B63A-7875-F6E6-493BC05B9EAE" name="Booking_Member_FK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:43:44 UTC</createdTime>
+<generatorID>25F1E920-935B-22C6-371C-DBB317609874</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE4EF1AC-6098-C3A3-6739-0B585DCE80D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

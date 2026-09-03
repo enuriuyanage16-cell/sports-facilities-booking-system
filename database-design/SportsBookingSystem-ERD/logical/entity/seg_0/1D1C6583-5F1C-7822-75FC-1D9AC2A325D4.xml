@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1D1C6583-5F1C-7822-75FC-1D9AC2A325D4" name="Review">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 07:40:18 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ReviewID" id="8F940DD8-4D38-8059-45AA-C30CB312CBEA">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 07:40:34 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rating" id="404A6689-BCBB-CEAC-193F-C33BA48ECAE2">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 07:41:43 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comment" id="CBBA32FF-D8A9-E4EB-A66B-BF305DDC25FA">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 07:42:16 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ReviewDate" id="26EEC0A5-AC2F-95C6-D744-85DBA0869253">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 07:42:48 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MemberID" id="FE6EED41-FAF9-30F4-04D9-864412B3D673">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:21:18 UTC</createdTime>
+<generatorID>26DC273A-6ACD-3690-722A-4C097C1105F1</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<referedAttribute>4D229ADD-E8C6-E965-C7AC-6A06FAD4A0B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FacilityID" id="CD0A0315-D2B6-E6FC-A2C2-8887BFC3FFAD">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 10:22:27 UTC</createdTime>
+<generatorID>78C4020B-33CE-681D-14AB-4A2C69CA90D5</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<referedAttribute>2D56EF88-F676-5380-D9E7-0056DE3DC154</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F30EA3E4-2844-83A4-C86B-44C2204E68CB" name="Review PK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-03 07:41:08 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8F940DD8-4D38-8059-45AA-C30CB312CBEA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
