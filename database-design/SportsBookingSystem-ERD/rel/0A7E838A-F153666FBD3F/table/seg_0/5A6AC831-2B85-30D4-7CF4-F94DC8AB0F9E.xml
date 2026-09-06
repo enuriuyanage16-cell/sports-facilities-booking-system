@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A6AC831-2B85-30D4-7CF4-F94DC8AB0F9E" name="Payment">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>F9A6220E-696D-CDA0-7FD6-D9B7A50B4F14</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PaymentID" id="06D55917-C28A-AB8B-DEE1-03BDF8B734BD">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>B73A9825-8437-BAE6-D7DA-944F70B4488E</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Amount" id="B1D86052-13FA-0D8A-1D95-33B8148EC69F">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>E024D785-A0BE-5756-32A7-3289E82B1438</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PaymentDate" id="65429960-705B-C178-057E-4025A07E5EBD">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>6EFBDAB6-FF19-DD02-BAA3-EFA16F85FC27</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PaymentMethod" id="BF9AD480-515C-B17C-D87D-9DE9612A41A0">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>0B83364B-DD0B-10FE-94E1-773228B8B16F</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PaymentStatus" id="7F1A56EA-1757-1441-B2C0-1ECA7424DD90">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>4A20920A-8EED-2595-29BB-728F08780DA8</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Booking_BookingID" id="E3AE2796-FE02-9AAD-B0C5-D055F722D2BC">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>CEA17E5D-E741-B5D0-9CDC-FF4BA69E0375</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="474DDBEC-3EE5-5561-37FF-8F69CFDDA431" referredColumn="7C7C12B7-8DBD-9AFB-80DF-700D202E8C17"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B3A2C07-CC2B-AA30-A8A6-7B63A0882F7F" name="Payment_PK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>22C538EF-1E43-D143-05D2-DC582B48BC90</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06D55917-C28A-AB8B-DEE1-03BDF8B734BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14BF63E2-3DBD-03C7-35ED-B24B789179FD" name="Payment__IDX">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CBFD1614-8DB5-2AA1-A7A6-7D3E974EE695</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E3AE2796-FE02-9AAD-B0C5-D055F722D2BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="884B35CE-C549-DB98-900A-8ADA42A5CD16" name="Payment_Booking_FK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>CBFD1614-8DB5-2AA1-A7A6-7D3E974EE695</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3AE2796-FE02-9AAD-B0C5-D055F722D2BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

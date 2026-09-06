@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MemberSports" directorySegmentName="seg_0" id="C1885DBC-4407-7428-9EBF-A39299354FFA">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:24:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<sourcePk>40C262C4-32A6-E937-E0B9-8A1950859B58</sourcePk>
+<targetPk>4E4BECAA-010D-DCC2-9349-63D3EC8F5F91</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>5825FFD8-3C42-167D-6336-C135285725CE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A3336A1E-1927-1F73-470F-C30C74EDD421</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

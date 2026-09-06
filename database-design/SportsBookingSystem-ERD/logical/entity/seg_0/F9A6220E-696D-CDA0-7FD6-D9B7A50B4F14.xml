@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98D0E86A-4AA9-2DD6-B2A0-FEF370CDD805" name="Booking">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F9A6220E-696D-CDA0-7FD6-D9B7A50B4F14" name="Payment">
 <createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 07:24:25 UTC</createdTime>
+<createdTime>2026-09-06 09:04:44 UTC</createdTime>
 <ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
 <engineerTo>
 <item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="BookingID" id="43B660D5-0BB8-DE13-5087-F81943D18ECF">
+<Attribute name="PaymentID" id="B73A9825-8437-BAE6-D7DA-944F70B4488E">
 <createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 07:24:42 UTC</createdTime>
+<createdTime>2026-09-06 09:05:05 UTC</createdTime>
 <ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
 <engineerTo>
 <item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
@@ -27,9 +27,23 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="BookingDate" id="8766F026-B62A-2445-0EF0-1F346E7F3CCC">
+<Attribute name="Amount" id="E024D785-A0BE-5756-32A7-3289E82B1438">
 <createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 07:25:13 UTC</createdTime>
+<createdTime>2026-09-06 09:05:34 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PaymentDate" id="6EFBDAB6-FF19-DD02-BAA3-EFA16F85FC27">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 09:07:55 UTC</createdTime>
 <ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
 <engineerTo>
 <item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
@@ -39,33 +53,9 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="StartTime" id="59486B84-DBA3-04B1-7B4C-BC0A68495701">
+<Attribute name="PaymentMethod" id="0B83364B-DD0B-10FE-94E1-773228B8B16F">
 <createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 07:27:44 UTC</createdTime>
-<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
-<engineerTo>
-<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT014</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="EndTime" id="125D591C-3F00-9048-0E03-52C830CD2B7E">
-<createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 07:28:56 UTC</createdTime>
-<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
-<engineerTo>
-<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT014</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Status" id="B9A02707-3506-73AB-1E0E-4D1ED7CAA082">
-<createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 07:29:17 UTC</createdTime>
+<createdTime>2026-09-06 09:13:49 UTC</createdTime>
 <ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
 <engineerTo>
 <item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
@@ -73,32 +63,31 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="MemberID" id="BF5463D5-28A4-0405-5CDE-3AB44345D1FA">
+<Attribute name="PaymentStatus" id="4A20920A-8EED-2595-29BB-728F08780DA8">
 <createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 10:14:29 UTC</createdTime>
-<generatorID>25F1E920-935B-22C6-371C-DBB317609874</generatorID>
+<createdTime>2026-09-06 09:15:08 UTC</createdTime>
 <ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
 <engineerTo>
 <item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
 </engineerTo>
-<referedAttribute>4D229ADD-E8C6-E965-C7AC-6A06FAD4A0B4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="FacilityID" id="CBFC655C-E952-83B4-ACE8-F5C07CA99E97">
+<Attribute name="BookingID" id="CEA17E5D-E741-B5D0-9CDC-FF4BA69E0375">
 <createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 10:19:55 UTC</createdTime>
-<generatorID>FB93CEBA-235C-9886-1DD8-6150D7C55B6A</generatorID>
+<createdTime>2026-09-06 18:23:10 UTC</createdTime>
+<generatorID>CBFD1614-8DB5-2AA1-A7A6-7D3E974EE695</generatorID>
 <ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
 <engineerTo>
 <item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
 </engineerTo>
-<referedAttribute>2D56EF88-F676-5380-D9E7-0056DE3DC154</referedAttribute>
+<referedAttribute>43B660D5-0BB8-DE13-5087-F81943D18ECF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -106,17 +95,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8E6C8C88-C775-3145-2291-93C41EBDC9F8" name="Booking PK">
+<identifier id="22C538EF-1E43-D143-05D2-DC582B48BC90" name="Payment PK">
 <createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 07:25:06 UTC</createdTime>
+<createdTime>2026-09-06 09:05:31 UTC</createdTime>
 <ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="false"/>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>43B660D5-0BB8-DE13-5087-F81943D18ECF</attributeRef>
+<attributeRef>B73A9825-8437-BAE6-D7DA-944F70B4488E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

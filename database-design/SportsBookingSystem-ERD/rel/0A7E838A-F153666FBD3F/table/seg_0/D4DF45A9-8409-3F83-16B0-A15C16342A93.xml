@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4DF45A9-8409-3F83-16B0-A15C16342A93" name="Sport">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>A3336A1E-1927-1F73-470F-C30C74EDD421</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SportID" id="A958F081-5390-E9DE-07F3-84DF341F2594">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>5302DFD8-ACB1-FA0B-3AB2-9DE87B30DD74</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SportName" id="F548C178-A806-A5DC-B20D-CD2C019701A5">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>F61974C3-79C8-B134-AD80-D77D53BA7987</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6719857-FFA5-20F4-4A31-07CA74BB0FB6" name="Sport_PK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>4E4BECAA-010D-DCC2-9349-63D3EC8F5F91</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A958F081-5390-E9DE-07F3-84DF341F2594"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

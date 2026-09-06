@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29A1F6DD-BFB7-1749-B7AE-B10373500F70" name="MemberSports">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Member_MemberID" id="1C5C948F-5A99-66B1-A74E-F625EFFB90D6">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64DA9B8E-A10E-DBAC-FD1F-1C44AD24AD5D" referredColumn="9D693143-1EFA-A37A-D9BF-850D2D36BE8E"/>
+</associations>
+</Column>
+<Column name="Sport_SportID" id="8E4F484B-987D-7F76-42B5-081904F33A4B">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54029598-CEE5-CFDD-370A-FF6DB1866079" referredColumn="A958F081-5390-E9DE-07F3-84DF341F2594"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0C74F8E-13E1-A1EC-EBBF-607BB5CD3B6F" name="MemberSports_PK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C5C948F-5A99-66B1-A74E-F625EFFB90D6"/>
+<colUsage columnID="8E4F484B-987D-7F76-42B5-081904F33A4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A132A00C-F652-5EDD-F2BD-6E9319C5C55F" name="MemberSports_Member_FK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>C1885DBC-4407-7428-9EBF-A39299354FFA</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C5C948F-5A99-66B1-A74E-F625EFFB90D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53542324-E0AC-8995-CF96-453A13D5BBF9" name="MemberSports_Sport_FK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>C1885DBC-4407-7428-9EBF-A39299354FFA</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E4F484B-987D-7F76-42B5-081904F33A4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

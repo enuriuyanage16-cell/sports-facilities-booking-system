@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FacilityAmenity" directorySegmentName="seg_0" id="11D1C686-FEAB-A85F-7022-991C35A73FF7">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:26:07 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<sourcePk>8C13C9B7-35B0-94B9-E5E0-E424E70CDE66</sourcePk>
+<targetPk>5A43F30E-F043-45A0-BD5B-6F15C7867CD9</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DE44F6C9-B0FB-A9C9-9CE3-995298A9A64C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>42559FE9-1F28-82B4-BB58-518782BD5757</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

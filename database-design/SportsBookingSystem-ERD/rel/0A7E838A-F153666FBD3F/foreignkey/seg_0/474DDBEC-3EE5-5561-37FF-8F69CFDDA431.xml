@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="474DDBEC-3EE5-5561-37FF-8F69CFDDA431" containerWithKeyObject="5A6AC831-2B85-30D4-7CF4-F94DC8AB0F9E" localFKIndex="884B35CE-C549-DB98-900A-8ADA42A5CD16" name="Payment_Booking_FK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>CBFD1614-8DB5-2AA1-A7A6-7D3E974EE695</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<referredTableLongName>Booking</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>36966C51-6833-869B-66FC-79B3C1143176</referredTableID>
+<keyObject>299C615C-4B59-210D-0012-8FBAFEC29635</keyObject>
+<referredKeyID>299C615C-4B59-210D-0012-8FBAFEC29635</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BookingID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

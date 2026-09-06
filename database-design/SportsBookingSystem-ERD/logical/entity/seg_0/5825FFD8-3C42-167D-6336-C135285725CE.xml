@@ -92,20 +92,6 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="MemberPreferredSports" id="60173753-D52B-CB6F-DDCF-0F73FECC96DA">
-<createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 07:03:42 UTC</createdTime>
-<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
-<engineerTo>
-<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="DateRegistered" id="3F90857B-4532-BCC2-F887-4293ADE2454F">
 <createdBy>sujeewa c.uyanage</createdBy>
 <createdTime>2026-09-03 07:04:22 UTC</createdTime>
@@ -124,8 +110,9 @@
 <createdBy>sujeewa c.uyanage</createdBy>
 <createdTime>2026-08-30 13:02:35 UTC</createdTime>
 <ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

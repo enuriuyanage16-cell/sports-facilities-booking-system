@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56D70F8A-BEEA-6EBD-2F9A-B43CF16BADAF" name="FacilityAmenity">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Facility_FacilityID" id="EB14D701-C61B-0B6C-2D6A-D89FFA790A93">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F436006-D75E-8F97-6C13-5891CB31E1CB" referredColumn="8074A11D-7459-289D-0F88-6BAD70BD0CBD"/>
+</associations>
+</Column>
+<Column name="Amenity_AmenityID" id="50B36C77-4756-F7AF-CC25-2FAEB2CF3FD3">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73D3234C-AD3D-950C-9489-DC5B273FFF40" referredColumn="58B79E1B-30BE-8486-2990-3D53E43F787B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58832FE7-1548-108A-C846-C054351E2D77" name="FacilityAmenity_PK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB14D701-C61B-0B6C-2D6A-D89FFA790A93"/>
+<colUsage columnID="50B36C77-4756-F7AF-CC25-2FAEB2CF3FD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A54F90C-735C-2049-2042-C336318A81B8" name="FacilityAmenity_Facility_FK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>11D1C686-FEAB-A85F-7022-991C35A73FF7</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB14D701-C61B-0B6C-2D6A-D89FFA790A93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D9B5549-5A96-36B9-E4CB-325326E89816" name="FacilityAmenity_Amenity_FK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-06 18:32:54 UTC</createdTime>
+<generatorID>11D1C686-FEAB-A85F-7022-991C35A73FF7</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50B36C77-4756-F7AF-CC25-2FAEB2CF3FD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

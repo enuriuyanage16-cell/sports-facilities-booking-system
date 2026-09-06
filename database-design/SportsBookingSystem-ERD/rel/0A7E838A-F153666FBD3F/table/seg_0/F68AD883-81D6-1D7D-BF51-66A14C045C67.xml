@@ -79,19 +79,6 @@
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MemberPreferredSports" id="30774513-9410-7E94-5EE2-3D678E7C4F82">
-<createdBy>sujeewa c.uyanage</createdBy>
-<createdTime>2026-09-03 10:43:43 UTC</createdTime>
-<generatorID>60173753-D52B-CB6F-DDCF-0F73FECC96DA</generatorID>
-<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="DateRegistered" id="8FA9136F-5815-4EE8-D0D7-A142DE7A256F">
 <createdBy>sujeewa c.uyanage</createdBy>
 <createdTime>2026-09-03 10:43:43 UTC</createdTime>
