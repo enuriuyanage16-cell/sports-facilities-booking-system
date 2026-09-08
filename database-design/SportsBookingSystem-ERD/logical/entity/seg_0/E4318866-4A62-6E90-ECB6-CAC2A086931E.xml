@@ -91,6 +91,21 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="FacilityID" id="3ED453A2-B811-85D6-768E-DAA3EE8430B7">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-08 18:57:29 UTC</createdTime>
+<generatorID>80F1C63E-DB1E-1C0D-1982-FD47958E8D3E</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D56EF88-F676-5380-D9E7-0056DE3DC154</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C24A582B-C4FB-EF0F-B7EF-8D77AC0B9C77" name="Inquiry PK">

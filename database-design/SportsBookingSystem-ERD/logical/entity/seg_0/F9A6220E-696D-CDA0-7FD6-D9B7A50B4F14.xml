@@ -99,8 +99,9 @@
 <createdBy>sujeewa c.uyanage</createdBy>
 <createdTime>2026-09-06 09:05:31 UTC</createdTime>
 <ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

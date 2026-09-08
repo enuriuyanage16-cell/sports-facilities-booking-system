@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FacilityInquiry" directorySegmentName="seg_0" id="80F1C63E-DB1E-1C0D-1982-FD47958E8D3E">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-08 18:57:29 UTC</createdTime>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<engineerTo>
+<item key="0A7E838A-285A-C80E-2C0D-F153666FBD3F" value="true"/>
+</engineerTo>
+<sourcePk>8C13C9B7-35B0-94B9-E5E0-E424E70CDE66</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DE44F6C9-B0FB-A9C9-9CE3-995298A9A64C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E4318866-4A62-6E90-ECB6-CAC2A086931E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

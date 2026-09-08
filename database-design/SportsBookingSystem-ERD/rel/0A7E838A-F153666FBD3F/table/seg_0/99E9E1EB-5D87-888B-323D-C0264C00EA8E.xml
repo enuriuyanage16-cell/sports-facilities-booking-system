@@ -78,6 +78,22 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Facility_FacilityID" id="19599AAD-CB36-6228-7415-94105A1755E5">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-08 19:00:57 UTC</createdTime>
+<generatorID>3ED453A2-B811-85D6-768E-DAA3EE8430B7</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31393807-8BD3-99AC-7CA9-8521F5B6D419" referredColumn="8074A11D-7459-289D-0F88-6BAD70BD0CBD"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="4A487018-0451-36F0-484E-FCF4FE8D86ED" name="Inquiry_PK">
@@ -90,6 +106,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F68B7D4D-9A33-6393-EB32-085E4225469B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3A86A0A-03D5-8B1A-FDD0-23916E576FA9" name="Inquiry_Facility_FK">
+<createdBy>sujeewa c.uyanage</createdBy>
+<createdTime>2026-09-08 19:00:57 UTC</createdTime>
+<generatorID>80F1C63E-DB1E-1C0D-1982-FD47958E8D3E</generatorID>
+<ownerDesignName>SportsBookingSystem-ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19599AAD-CB36-6228-7415-94105A1755E5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
