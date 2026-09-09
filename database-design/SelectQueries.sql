@@ -1,12 +1,27 @@
 
--- 1. Facility Search (Members only - full details, search by facility type)
+
+-- 1. Facility Search (Members only - full details, search by facility type, date and time)
 SELECT * FROM Facility
-WHERE FacilityType LIKE '%Tennis%' AND FacilityAvailabilityStatus = 'Available';
+WHERE FacilityType LIKE '%Tennis%' 
+AND FacilityAvailabilityStatus = 'Available'
+AND FacilityID NOT IN (
+    SELECT Facility_FacilityID FROM Booking
+    WHERE BookingDate = '2026-09-10'
+    AND Status IN ('Confirmed', 'Pending')
+    AND (StartTime < '10:00:00' AND EndTime > '09:00:00')
+);
 
 
--- 2. Restricted Search (Guests only - limited details, search by facility type)
+-- 2. Restricted Search (Guests only - limited details, search by type, date and time)
 SELECT FacilityName, FacilityType, FacilityLocation, FacilityAvailabilityStatus FROM Facility
-WHERE FacilityType LIKE '%Tennis%' AND FacilityAvailabilityStatus = 'Available';
+WHERE FacilityType LIKE '%Tennis%' 
+AND FacilityAvailabilityStatus = 'Available'
+AND FacilityID NOT IN (
+    SELECT Facility_FacilityID FROM Booking
+    WHERE BookingDate = '2026-09-10'
+    AND Status IN ('Confirmed', 'Pending')
+    AND (StartTime < '10:00:00' AND EndTime > '09:00:00')
+);
 
 
 -- 3. Review Search by Facility (Guests and Members)
