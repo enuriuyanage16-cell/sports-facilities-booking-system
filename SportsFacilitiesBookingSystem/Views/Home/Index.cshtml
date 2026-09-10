@@ -2,6 +2,13 @@
     ViewData["Title"] = "Home";
 }
 
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
 <div class="hero-image">
     <img src="~/images/hero-warmup.png" alt="Warmup, different games same passion" />
 </div>
@@ -60,3 +67,17 @@
         </div>
     </div>
 </div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        setTimeout(function() {
+            var msg = document.querySelector('.alert-success');
+            if (msg) {
+                msg.style.transition = 'opacity 0.6s ease';
+                msg.style.opacity = '0';
+                setTimeout(function() { msg.remove(); }, 600);
+            }
+        }, 30000);
+    </script>
+}
