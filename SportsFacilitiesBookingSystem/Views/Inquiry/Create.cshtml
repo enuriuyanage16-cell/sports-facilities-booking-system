@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Submit an Inquiry";
+    var facilities = ViewBag.Facilities as List<SportsFacilitiesBookingSystem.Models.Facility>;
+}
+
+<section class="form-section">
+    <div class="form-card">
+        <h1>Have a Question?</h1>
+        <p class="form-sub">Send us an inquiry and we'll get back to you by email.</p>
+
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" class="form-input" required />
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" class="form-input" placeholder="name@example.com" required />
+            </div>
+
+            <div class="form-group">
+                <label>Contact Number</label>
+                <input type="text" name="contactNo" class="form-input" placeholder="07XXXXXXXX" required />
+            </div>
+
+            <div class="form-group">
+                <label>About which facility? (optional)</label>
+                <select name="facilityId" class="form-input">
+                    <option value="">General inquiry, not about a specific facility</option>
+                    @foreach (var facility in facilities!)
+                    {
+                        <option value="@facility.FacilityId">@facility.FacilityName</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Your Message</label>
+                <textarea name="inquiryMessage" class="form-input" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-solid form-submit">Submit Inquiry</button>
+        </form>
+    </div>
+</section>

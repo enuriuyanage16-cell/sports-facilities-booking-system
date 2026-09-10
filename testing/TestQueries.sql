@@ -30,3 +30,9 @@ SELECT * FROM Review ORDER BY ReviewID DESC;
 -- Test: Confirm Review Search returns correct reviews for a selected facility
 
 SELECT * FROM Review WHERE Facility_FacilityID = 2 ORDER BY ReviewDate DESC;
+
+
+
+-- Test: Confirm inquiries save correctly, both linked to a facility and general (NULL)
+
+SELECT * FROM Inquiry ORDER BY InquiryID DESC;
