@@ -92,6 +92,22 @@ a {
         background: #7C4DEF;
     }
 
+
+.nav-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #8B5CF6;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
 /* ===== Hero image (full width, no overlay) ===== */
 .hero-image {
     width: 100%;
@@ -368,3 +384,25 @@ a {
     color: #ffffff;
     text-align: center;
 }
+
+.field-error-box {
+    background: rgba(242, 116, 116, 0.12);
+    border: 1px solid #f27474;
+    color: #f7c8c8;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.form-footer-text {
+    text-align: center;
+    color: #9aa7b5;
+    margin-top: 24px;
+    font-size: 0.9rem;
+}
+
+    .form-footer-text a {
+        color: #8B5CF6;
+        font-weight: 600;
+    }

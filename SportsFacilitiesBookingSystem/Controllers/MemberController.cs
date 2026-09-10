@@ -34,5 +34,35 @@ namespace SportsFacilitiesBookingSystem.Controllers
             }
             return View(member);
         }
+
+        // GET (Member/SignIn)
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+
+        // POST (Member/SignIn)
+        [HttpPost]
+        public IActionResult SignIn(string MemberEmail, string MemberPassword)
+        {
+            var member = _context.Members.FirstOrDefault(m => m.MemberEmail == MemberEmail && m.MemberPassword == MemberPassword);
+
+            if (member != null)
+            {
+                HttpContext.Session.SetInt32("MemberId", member.MemberId);
+                HttpContext.Session.SetString("MemberName", member.MemberName);
+                TempData["SuccessMessage"] = $"Welcome back, {member.MemberName}!";
+                return RedirectToAction("Index", "Home");
+            }
+
+            ViewBag.ErrorMessage = "Incorrect email or password. Please try again.";
+            return View();
+        }
+
+        public IActionResult SignOut()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

@@ -19,8 +19,17 @@
                     <a asp-controller="Facility" asp-action="Search">Search Facilities</a>
                     <a asp-controller="Review" asp-action="Search">Reviews</a>
                     <a asp-controller="Inquiry" asp-action="Create">Inquiry</a>
-                    <a asp-controller="Member" asp-action="SignIn">Sign In</a>
-                    <a class="nav-cta" asp-controller="Member" asp-action="Register">Register</a>
+
+                    @if (Context.Session.GetInt32("MemberId") != null)
+                    {
+                        <div class="nav-avatar">@Context.Session.GetString("MemberName")!.Substring(0, 1).ToUpper()</div>
+                        <a asp-controller="Member" asp-action="SignOut">Sign Out</a>
+                    }
+                    else
+                    {
+                        <a asp-controller="Member" asp-action="SignIn">Sign In</a>
+                        <a class="nav-cta" asp-controller="Member" asp-action="Register">Register</a>
+                    }
                 </div>
             </div>
         </nav>
