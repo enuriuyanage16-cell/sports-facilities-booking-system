@@ -36,3 +36,9 @@ SELECT * FROM Review WHERE Facility_FacilityID = 2 ORDER BY ReviewDate DESC;
 -- Test: Confirm inquiries save correctly, both linked to a facility and general (NULL)
 
 SELECT * FROM Inquiry ORDER BY InquiryID DESC;
+
+
+
+-- Test: Confirm Facility Search filters correctly by location
+
+SELECT * FROM Facility WHERE FacilityLocation LIKE '%Colombo%';

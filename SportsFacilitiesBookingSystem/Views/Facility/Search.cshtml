@@ -13,12 +13,16 @@
 
 <section class="search-section">
     <h1 class="section-title">Search Facilities</h1>
-    <p class="section-sub">Find a facility by type, date, and time</p>
+    <p class="section-sub">Find a facility by type, location, date, and time</p>
 
     <form asp-action="Search" method="get" class="search-form">
         <div class="search-field">
             <label>Sport / Type</label>
             <input type="text" name="facilityType" class="form-input" placeholder="e.g. Tennis" value="@Context.Request.Query["facilityType"]" />
+        </div>
+        <div class="search-field">
+            <label>Location</label>
+            <input type="text" name="location" class="form-input" placeholder="e.g. Colombo" value="@Context.Request.Query["location"]" />
         </div>
         <div class="search-field">
             <label>Date</label>

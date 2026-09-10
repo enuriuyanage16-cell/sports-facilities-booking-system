@@ -13,7 +13,7 @@ namespace SportsFacilitiesBookingSystem.Controllers
         }
 
         // GET (Facility/Search)
-        public IActionResult Search(string? facilityType, DateOnly? searchDate, TimeOnly? startTime, TimeOnly? endTime)
+        public IActionResult Search(string? facilityType, string? location, DateOnly? searchDate, TimeOnly? startTime, TimeOnly? endTime)
         {
             if (HttpContext.Session.GetInt32("MemberId") == null)
             {
@@ -26,6 +26,11 @@ namespace SportsFacilitiesBookingSystem.Controllers
             if (!string.IsNullOrEmpty(facilityType))
             {
                 facilities = facilities.Where(f => f.FacilityType.Contains(facilityType));
+            }
+
+            if (!string.IsNullOrEmpty(location))
+            {
+                facilities = facilities.Where(f => f.FacilityLocation.Contains(location));
             }
 
             facilities = facilities.Where(f => f.FacilityAvailabilityStatus == "Available");
@@ -70,7 +75,7 @@ namespace SportsFacilitiesBookingSystem.Controllers
             return View(facilities.ToList());
         }
 
-        // GET: Facility/Book/5
+        // GET (Facility/Book/5)
         public IActionResult Book(int id)
         {
             if (HttpContext.Session.GetInt32("MemberId") == null)
@@ -88,7 +93,7 @@ namespace SportsFacilitiesBookingSystem.Controllers
             return View(facility);
         }
 
-        // POST: Facility/Book
+        // POST (Facility/Book)
         [HttpPost]
         public IActionResult Book(int facilityId, DateOnly bookingDate, TimeOnly startTime, TimeOnly endTime, decimal amount, string paymentMethod)
         {
