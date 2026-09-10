@@ -1,5 +1,12 @@
 ﻿@model List<SportsFacilitiesBookingSystem.Models.Facility>
 
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
 @{
     ViewData["Title"] = "Search Facilities";
 }
@@ -42,6 +49,7 @@
                     <p class="result-type">@facility.FacilityType &middot; @facility.FacilityLocation</p>
                     <p>@facility.Description</p>
                     <p class="result-meta">Capacity: @facility.FacilityCapacity &middot; @facility.OpeningTime - @facility.ClosingTime</p>
+                    <a asp-controller="Facility" asp-action="Book" asp-route-id="@facility.FacilityId" class="btn-solid result-book-btn">Book Now</a>
                 </div>
             }
         }

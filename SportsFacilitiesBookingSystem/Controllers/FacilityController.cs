@@ -69,5 +69,86 @@ namespace SportsFacilitiesBookingSystem.Controllers
 
             return View(facilities.ToList());
         }
+
+        // GET: Facility/Book/5
+        public IActionResult Book(int id)
+        {
+            if (HttpContext.Session.GetInt32("MemberId") == null)
+            {
+                TempData["SuccessMessage"] = "Please sign in to book a facility.";
+                return RedirectToAction("SignIn", "Member");
+            }
+
+            var facility = _context.Facilities.Find(id);
+            if (facility == null)
+            {
+                return NotFound();
+            }
+
+            return View(facility);
+        }
+
+        // POST: Facility/Book
+        [HttpPost]
+        public IActionResult Book(int facilityId, DateOnly bookingDate, TimeOnly startTime, TimeOnly endTime, decimal amount, string paymentMethod)
+        {
+            int? memberId = HttpContext.Session.GetInt32("MemberId");
+            if (memberId == null)
+            {
+                return RedirectToAction("SignIn", "Member");
+            }
+
+            if (endTime <= startTime)
+            {
+                TempData["SuccessMessage"] = "End time must be after start time.";
+                return RedirectToAction("Search");
+            }
+
+            bool isOverlapping = _context.Bookings.Any(b =>
+                b.FacilityFacilityId == facilityId
+                && b.BookingDate == bookingDate
+                && (b.Status == "Confirmed" || b.Status == "Pending")
+                && b.StartTime < endTime && b.EndTime > startTime);
+
+            if (isOverlapping)
+            {
+                TempData["SuccessMessage"] = "Sorry, that time slot is no longer available.";
+                return RedirectToAction("Search");
+            }
+
+            int nextBookingId = _context.Bookings.Any() ? _context.Bookings.Max(b => b.BookingId) + 1 : 1;
+
+            var booking = new Booking
+            {
+                BookingId = nextBookingId,
+                BookingDate = bookingDate,
+                StartTime = startTime,
+                EndTime = endTime,
+                Status = "Confirmed",
+                MemberMemberId = memberId.Value,
+                FacilityFacilityId = facilityId
+            };
+
+            _context.Bookings.Add(booking);
+            _context.SaveChanges();
+
+            int nextPaymentId = _context.Payments.Any() ? _context.Payments.Max(p => p.PaymentId) + 1 : 1;
+
+            var payment = new Payment
+            {
+                PaymentId = nextPaymentId,
+                Amount = amount,
+                PaymentDate = DateOnly.FromDateTime(DateTime.Now),
+                PaymentMethod = paymentMethod,
+                PaymentStatus = "Paid",
+                BookingBookingId = booking.BookingId
+            };
+
+            _context.Payments.Add(payment);
+            _context.SaveChanges();
+
+            TempData["SuccessMessage"] = "Booking confirmed! Your payment was successful.";
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

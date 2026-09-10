@@ -455,6 +455,14 @@ a {
     height: 46px;
 }
 
+.result-book-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
 .results-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
