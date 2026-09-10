@@ -16,3 +16,12 @@ SELECT * FROM Member WHERE MemberEmail = 'samidhi@email.com' AND MemberPassword 
 SELECT * FROM Booking ORDER BY BookingID DESC;
 
 SELECT * FROM Payment ORDER BY PaymentID DESC;
+
+SELECT * FROM Booking WHERE Facility_FacilityID = 11 ORDER BY BookingID DESC;
+
+
+
+
+-- Test: Confirm new review submission saved correctly
+
+SELECT * FROM Review ORDER BY ReviewID DESC;

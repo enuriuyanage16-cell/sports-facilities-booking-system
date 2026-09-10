@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -504,4 +505,17 @@ a {
     color: #9aa7b5;
     padding: 40px 0;
     grid-column: 1 / -1;
+}
+
+
+
+
+
+
+
+
+
+textarea.form-input {
+    resize: vertical;
+    font-family: 'Inter', sans-serif;
 }

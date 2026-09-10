@@ -25,11 +25,12 @@
                         <a asp-controller="Facility" asp-action="RestrictedSearch">Search Facilities</a>
                     }
 
-                    <a asp-controller="Review" asp-action="Search">Reviews</a>
+                    <a asp-controller="Review" asp-action="Search">Search Reviews</a>
                     <a asp-controller="Inquiry" asp-action="Create">Inquiry</a>
 
                     @if (Context.Session.GetInt32("MemberId") != null)
                     {
+                        <a asp-controller="Review" asp-action="Create">Leave a Review</a>
                         <div class="nav-avatar">@Context.Session.GetString("MemberName")!.Substring(0, 1).ToUpper()</div>
                         <a asp-controller="Member" asp-action="SignOut">Sign Out</a>
                     }
