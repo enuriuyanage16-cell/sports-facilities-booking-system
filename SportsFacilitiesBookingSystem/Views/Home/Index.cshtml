@@ -1,8 +1,62 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero-image">
+    <img src="~/images/hero-warmup.png" alt="Warmup, different games same passion" />
+</div>
+
+<section class="hero-text">
+    <h1>Book Your Next Game, Effortlessly</h1>
+    <p>Find and reserve community sports facilities near you, tennis courts, swimming pools, soccer fields, and more, all in one place.</p>
+    <div class="hero-buttons">
+        <a href="@Url.Action("Register", "Member")" class="btn-solid">Sign Up Free</a>
+        <a href="@Url.Action("Search", "Facility")" class="btn-outline">Browse Facilities</a>
+    </div>
+</section>
+
+<h2 class="section-title">Popular Sports</h2>
+<p class="section-sub">Five sports, one place to book them all</p>
+<div class="sport-grid">
+    <div class="sport-card">
+        <img src="~/images/sport-tennis.png" alt="Tennis" />
+        <span>Tennis</span>
+    </div>
+    <div class="sport-card">
+        <img src="~/images/sport-soccer.png" alt="Soccer" />
+        <span>Soccer</span>
+    </div>
+    <div class="sport-card">
+        <img src="~/images/sport-swimming.png" alt="Swimming" />
+        <span>Swimming</span>
+    </div>
+    <div class="sport-card">
+        <img src="~/images/sport-boxing.png" alt="Boxing" />
+        <span>Boxing</span>
+    </div>
+    <div class="sport-card">
+        <img src="~/images/sport-basketball.png" alt="Basketball" />
+        <span>Basketball</span>
+    </div>
+</div>
+
+<div class="why-section">
+    <div class="why-image">
+        <img src="~/images/booking-easy.png" alt="Easy online booking" />
+    </div>
+    <div class="why-content">
+        <h2>Why Book With Us</h2>
+        <div class="why-item">
+            <h5>Easy Booking</h5>
+            <p>Reserve a facility in just a few clicks, anytime.</p>
+        </div>
+        <div class="why-item">
+            <h5>Real Reviews</h5>
+            <p>See honest ratings from members who've played there.</p>
+        </div>
+        <div class="why-item">
+            <h5>Facilities Near You</h5>
+            <p>Search by location, sport, or availability.</p>
+        </div>
+    </div>
 </div>

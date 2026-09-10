@@ -1,22 +1,266 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+* {
+    box-sizing: border-box;
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+    background-color: #0B1E33;
+    color: #F7F5F0;
+    margin: 0;
+}
+
+html {
+    position: static !important;
+}
+
+body {
+    margin-bottom: 0 !important;
+}
+
+.footer {
+    position: static !important;
+    background: #0B1E33;
+    color: #9aa7b5;
+    padding: 24px;
+    text-align: center;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background: rgba(11, 30, 51, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-inner {
+    width: 100%;
+    margin: 0;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+}
+
+    .nav-links a {
+        color: #d7ddE6;
+        font-size: 1.1rem;
+    }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+.nav-cta {
+    background: #8B5CF6;
+    color: #ffffff !important;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+    .nav-cta:hover {
+        background: #7C4DEF;
+    }
+
+/* ===== Hero image (full width, no overlay) ===== */
+.hero-image {
+    width: 100%;
+    display: block;
+}
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+/* ===== Hero text section below image ===== */
+.hero-text {
+    text-align: center;
+    padding: 56px 20px;
+    background: linear-gradient(180deg, #0B1E33, #123055);
+}
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+        color: #ffffff;
+        margin-bottom: 12px;
+    }
+
+    .hero-text p {
+        color: #c3ccd6;
+        max-width: 560px;
+        margin: 0 auto 28px;
+        font-size: 1.25rem;
+    }
+
+.hero-buttons a {
+    margin: 0 8px;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-solid {
+    background: #8B5CF6;
+    color: #ffffff;
+}
+
+    .btn-solid:hover {
+        background: #7C4DEF;
+    }
+
+.btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+    .btn-outline:hover {
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+/* ===== Section headings ===== */
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-top: 64px;
+    
+}
+
+.section-sub {
+    text-align: center;
+    color: #9aa7b5;
+    margin-bottom: 36px;
+}
+
+/* ===== Sport category grid ===== */
+.sport-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 68px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 24px 64px;
+}
+
+.sport-card {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 3/4;
+    transition: transform 0.25s ease;
+}
+
+    .sport-card:hover {
+        transform: translateY(-15px);
+    }
+
+    .sport-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .sport-card span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 14px;
+        background: linear-gradient(180deg, transparent, rgba(0,0,0,0.75));
+        color: #ffffff;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+/* ===== Why book with us (image + text side by side) ===== */
+.why-section {
+    max-width: 1300px;
+    margin: 24px auto 80px;
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+}
+
+.why-image {
+    flex: 1 1 420px;
+}
+
+    .why-image img {
+        width: 100%;
+        border-radius: 12px;
+        display: block;
+    }
+
+.why-content {
+    flex: 1 1 360px;
+}
+
+    .why-content h2 {
+        font-size: 2.4rem;
+        color: #ffffff;
+        margin-bottom: 28px;
+    }
+
+.why-item {
+    margin-bottom: 20px;
+}
+
+    .why-item h5 {
+        color: #8B5CF6;
+        margin: 0 0 6px;
+        font-size: 1.2rem;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .why-item p {
+        color: #c3ccd6;
+        margin: 0;
+        font-size: 1.05rem;
+    }
+
+
+.container {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
