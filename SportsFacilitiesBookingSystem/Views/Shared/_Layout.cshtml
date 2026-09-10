@@ -16,7 +16,15 @@
             <div class="nav-inner">
                 <a class="nav-logo" asp-controller="Home" asp-action="Index">Warmup</a>
                 <div class="nav-links">
-                    <a asp-controller="Facility" asp-action="Search">Search Facilities</a>
+                    @if (Context.Session.GetInt32("MemberId") != null)
+                    {
+                        <a asp-controller="Facility" asp-action="Search">Search Facilities</a>
+                    }
+                    else
+                    {
+                        <a asp-controller="Facility" asp-action="RestrictedSearch">Search Facilities</a>
+                    }
+
                     <a asp-controller="Review" asp-action="Search">Reviews</a>
                     <a asp-controller="Inquiry" asp-action="Create">Inquiry</a>
 
