@@ -25,3 +25,8 @@ SELECT * FROM Booking WHERE Facility_FacilityID = 11 ORDER BY BookingID DESC;
 -- Test: Confirm new review submission saved correctly
 
 SELECT * FROM Review ORDER BY ReviewID DESC;
+
+
+-- Test: Confirm Review Search returns correct reviews for a selected facility
+
+SELECT * FROM Review WHERE Facility_FacilityID = 2 ORDER BY ReviewDate DESC;

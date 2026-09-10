@@ -1,0 +1,53 @@
+﻿@model List<SportsFacilitiesBookingSystem.Models.Review>
+
+@{
+    ViewData["Title"] = "Search Reviews";
+    var facilities = ViewBag.Facilities as List<SportsFacilitiesBookingSystem.Models.Facility>;
+    int? selectedId = ViewBag.SelectedFacilityId;
+}
+
+<section class="search-section">
+    <h1 class="section-title">Search Reviews</h1>
+    <p class="section-sub">See what members are saying about each facility</p>
+
+    <form asp-action="Search" method="get" class="search-form">
+        <div class="search-field">
+            <label>Facility</label>
+            <select name="facilityId" class="form-input" onchange="this.form.submit()">
+                <option value="">Select a facility...</option>
+                @foreach (var facility in facilities!)
+                {
+                    if (selectedId == facility.FacilityId)
+                    {
+                        <option value="@facility.FacilityId" selected>@facility.FacilityName</option>
+                    }
+                    else
+                    {
+                        <option value="@facility.FacilityId">@facility.FacilityName</option>
+                    }
+                }
+            </select>
+        </div>
+    </form>
+
+    <div class="results-grid">
+        @if (selectedId == null)
+        {
+            <p class="no-results">Choose a facility above to see its reviews.</p>
+        }
+        else if (Model.Count == 0)
+        {
+            <p class="no-results">No reviews yet for this facility.</p>
+        }
+        else
+        {
+            @foreach (var review in Model)
+            {
+                <div class="result-card">
+                    <p class="result-type">@review.Rating out of 5 &middot; @review.ReviewDate</p>
+                    <p>@(string.IsNullOrEmpty(review.Comment) ? "No comment left." : review.Comment)</p>
+                </div>
+            }
+        }
+    </div>
+</section>

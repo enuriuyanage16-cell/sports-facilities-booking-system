@@ -73,5 +73,24 @@ namespace SportsFacilitiesBookingSystem.Controllers
             TempData["SuccessMessage"] = "Thank you! Your review has been submitted.";
             return RedirectToAction("Index", "Home");
         }
+
+        // GET (Review/Search)
+        public IActionResult Search(int? facilityId)
+        {
+            ViewBag.Facilities = _context.Facilities.ToList();
+
+            if (facilityId == null)
+            {
+                return View(new List<Review>());
+            }
+
+            var reviews = _context.Reviews
+                .Where(r => r.FacilityFacilityId == facilityId)
+                .OrderByDescending(r => r.ReviewDate)
+                .ToList();
+
+            ViewBag.SelectedFacilityId = facilityId;
+            return View(reviews);
+        }
     }
 }
